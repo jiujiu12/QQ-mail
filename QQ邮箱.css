@@ -1,0 +1,140 @@
+/* 网页首端 */
+#head{
+	/* border: black solid 1px; */
+	margin: 0;
+	height: 65px;
+	background-color: #eff4fa;
+}
+
+#headleft{
+    /* border: black solid 1px; */
+	/* 左端 */
+	float: left;
+	height: 65px;
+}
+
+#headright{
+    /* 	border: black solid 1px; */   
+    /* 右端 */
+    float: right;
+	margin-top: 20px;
+	/* position: fixed;
+	left: 1100px; */
+	}
+/* 右端超链接格式 */
+	a{
+		/* 无下标 */
+		text-decoration: none;
+		/* 字体颜色 */
+		color:#1d5494;
+		/* 字体大小 */
+		font-size: 10px;
+	}
+	a:hover{
+		/* 鼠标滑过样式 */
+		text-decoration: underline;
+	}
+/* 网页中部样式设置 */
+#mid{
+	/* border: black solid 1px; */
+    /* 高度 */
+	height: 520px;
+}
+#midleft{
+	/* border: black solid 1px; */
+       /* 左浮动 */
+	   float: left;
+	  margin: 90px 80px ;
+	   height:360px ;
+	   line-height: 40px;
+	   width: 250px;
+	   }
+/* QQ邮箱，常联系！ */
+h2{
+		   color:#6f95c8 ;
+	   }
+ /* 登录 */
+#midright{
+	border: gray solid 1px;
+	height:375px;
+	width:340px ;
+	float: right;
+	margin:80px 50px;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	position: absolute;
+	left: 900px;
+	bottom: 50px;
+	}
+	/* p{
+		border: black solid 1px;
+	} */
+	/* QQ登录，微信登录 */
+	#rfloat{
+	   border-bottom: gray solid 1px;
+		height: 50px;
+		color: gray;
+		text-align: center;
+		background-color: #f9fbfe;
+	}
+	/* 图片 */
+#mmid{
+	/* border: black solid 1px; */
+	height: 420px;
+	width: 350px;
+	position: absolute;
+	left: 400px;
+	bottom: 100px;
+	}
+	/* 网页底部 */
+	#bottom-left{
+	/* border: black solid 1px; */
+		margin-top: 80px;
+		height: 60px;
+		width: 700px;
+		position: absolute;
+		bottom: 35px;
+		left: 245px;
+	}
+	ul{
+		list-style-type: none;
+	}
+	li{
+		float: left;
+		display: inline;
+	}
+	#bottom{
+		/* border: black solid 1px; */
+		margin-top: 30px;
+		height: 100px;
+		position: absolute;
+		bottom: 10px;
+        background-color:#eff4fa;
+	}
+	#bottom-right{
+	height: 60px;
+	/* border: black solid 1px; */
+	width: 360px;
+	float: right;
+	color: gray;
+	position:absolute;
+    left: 600px;
+	bottom: 17px;
+	}
+	/* 登录按钮样式 */
+	#sub{
+	height: 40px;
+		width:250px ;
+		color: white;
+		font-size: 18px;
+		border-radius: 5px;
+		background-color: #5a98de;	
+	}
+	/* 账号密码框样式 */
+	#txt,#pwd{
+		height: 28px;
+		width: 250px;
+		margin-top: 30px;
+		color: gray;
+		/* margin-bottom: 5px; */
+	}
