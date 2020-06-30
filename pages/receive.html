@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>欢迎</title>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
+    </script>
+    <script>
+        $(document).ready(function(){
+            $.ajax({
+                        url:"/demo/login",
+                        type : get,
+                        dataType : JSON,
+                        data : {
+                            'name': user.val(),
+                            'pwd' : pwd.val()
+                        },
+                        success:function(result){
+                            // window.location.href = './pages/receive.html';
+                    }
+                });
+        });
+    </script>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>选择</th>
+            <th>用户名</th>
+            <th>标题</th>
+            <th>删除</th>
+        </tr>
+        <tr>
+            <td><input type="checkbox" /> </td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    
+</body>
+</html>

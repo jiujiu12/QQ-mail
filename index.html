@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>登录QQ邮箱</title>
+		<!-- <meta http-equiv="refresh" content="2" /> -->
+		<link href="css/QQ邮箱.css" type="text/css" rel="stylesheet" />
+		<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
+		</script>
+		<script>
+			$(document).ready(function(){
+				var user = $('input[name = user]');
+				var pwd = $('input[name = pwd]');
+				$("#sub").click(function(){
+						$.ajax({
+							url:"/demo/login",
+							type : 'POST',
+							dataType : JSON,
+							data : {
+								'name': user.val(),
+								'pwd' : pwd.val()
+							},
+							success:function(result){
+								window.location.href = './pages/receive.html?id';
+						}
+					});
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div id="head">
+			<div id="headleft"><img src="img/01.png"/></div>
+			<div id="headright">
+				<a href="#">基本版 |</a>
+				<a href="#"> English |</a>
+				<a href="#"> 手机版 |</a>
+				<a href="#"> 企业邮箱</a>
+			</div>
+		</div>
+	<div id="mid">
+		<div id="midleft">
+			<h2>QQ邮箱，常联系！</h2>
+			<p>2500年前，人们飞鸽传书<br/>
+               183年前，莫尔斯发明了电报<br/>
+               50年前，第一封电子邮件发出<br/>
+               今天，QQ邮箱联系你、我、他</p>
+		</div>
+		<div ><img id="mmid" src="img/02.png"/></div>
+		<div id="midright">
+			<div id="rfloat"><p>微信登录&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;QQ登录</p></div>
+			<center>
+			<input type="text" id="user" value="请输入账号" /><br />
+			<input type="password" id="pwd" name="pwd" value="请输入密码" /><br /></center><br />
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="checkbox"  name="choose" value="下次自动登录" id="next"/>下次自动登录<br />
+            <br /><center>
+			<input type="button" id="sub" value="登录" /> <br /></center>
+			<center><a>扫码快捷登录</a><br /></center>
+			<br /><br />
+			<a href="#" style="float: right;">忘了密码？</a>
+		</div>
+	<div id="bottom">
+		<div id="bottom-left">
+		<ul>
+			<li><a href="#">关于腾讯|</a></li>
+			<li><a href="#">服务条款|</a></li>
+			<li><a href="#">隐私政策|</a></li>
+			<li><a href="#">客服中心|</a></li>
+			<li><a href="#">联系我们|</a></li>
+			<li><a href="#">帮助中心|</a></li>
+		</ul>
+		</div>
+		<div id="bottom-right">
+		©1998 - 2019 Tencent Inc. All Rights Reserved.
+	</div>
+	</div>
+	</div>
+	</body>
+</html>
